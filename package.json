@@ -1,11 +1,17 @@
 {
-    "name": "WobjectPackager",
+    "name": "wobjectPackager",
     "version": "1.0.0",
-    "description": "",
+    "description": "Simple Wobject Packaging tool",
     "main": "app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "electron ."
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "build": {
+        "appId": "com.whittington.wobjectpackager",
+        "productName": "Whittington Wobject Packager"
     },
     "keywords": [],
     "author": "",
@@ -14,6 +20,7 @@
         "nodemon": "^2.0.2"
     },
     "devDependencies": {
+        "electron-packager": "^14.2.1",
         "electron": "^8.1.0"
     }
 }
